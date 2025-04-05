@@ -1,45 +1,84 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform } from 'react-native';
+import { View } from "react-native";
+import React from "react";
+import { Tabs } from "expo-router";
+import { FontAwesome, Ionicons, MaterialIcons } from "@expo/vector-icons";
+import Colors from "@/constants/Colors";
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+const Layout = () => {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
+        tabBarStyle: {
+          backgroundColor: Colors.white,
+          borderTopWidth: 0,
+          padding: 0,
+        },
+        tabBarShowLabel: false,
+        tabBarActiveTintColor: Colors.black,
+        tabBarInactiveTintColor: "#999",
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => {
+            return <Ionicons name="compass" size={28} color={color} />;
+          },
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="category"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          tabBarIcon: ({color}) => {
+            return (
+              <MaterialIcons name="space-dashboard" size={28} color={color} />
+            );
+          },
+        }}
+      />
+      <Tabs.Screen
+        name="search"
+        options={{
+          tabBarIcon: ({ color }) => {
+            return (
+              <View
+                style={{
+                  backgroundColor: Colors.primaryColor,
+                  paddingHorizontal: 12,
+                  paddingVertical: 12,
+                  borderRadius: 10,
+                  height: 50,
+                  width: 50,
+                }}
+              >
+                <Ionicons
+                  name="search-outline"
+                  size={28}
+                  color={Colors.white}
+                />
+              </View>
+            );
+          },
+        }}
+      />
+      <Tabs.Screen
+        name="bookmarks"
+        options={{
+          tabBarIcon: ({ color }) => {
+            return <Ionicons name="bookmark" size={28} color={color} />;
+          },
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          tabBarIcon: ({ color }) => {
+            return <FontAwesome name="user" size={28} color={color} />;
+          },
         }}
       />
     </Tabs>
   );
-}
+};
+
+export default Layout;
