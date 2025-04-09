@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "Tropical Paradise Resort",
+    "image": "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg",
+    "description": "Escape to the ultimate tropical paradise retreat with comfort and luxury.",
+    "price": "160",
+    "duration": "3",
+    "location": "Pacific Ocean",
+    "category": "Beaches"
+  },
+  {
+    "id": "2",
+    "name": "Ocean Breeze Bungalows",
+    "image": "https://images.pexels.com/photos/1007099/pexels-photo-1007099.jpeg",
+    "description": "Relax in overwater bungalows with stunning ocean views.",
+    "price": "200",
+    "duration": "4",
+    "location": "Indian Ocean",
+    "category": "Islands"
+  },
+  {
+    "id": "3",
+    "name": "Everest Trek Lodge",
+    "image": "https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg",
+    "description": "A cozy stop on your journey to the world’s highest peak.",
+    "price": "120",
+    "duration": "5",
+    "location": "Himalayas, Nepal",
+    "category": "Mountain"
+  },
+  {
+    "id": "4",
+    "name": "Skyline Penthouse",
+    "image": "https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg",
+    "description": "Luxury stay with panoramic city views from the top floor.",
+    "price": "250",
+    "duration": "2",
+    "location": "New York, USA",
+    "category": "Cities"
+  },
+  {
+    "id": "5",
+    "name": "Yellowstone Cabin",
+    "image": "https://images.pexels.com/photos/803975/pexels-photo-803975.jpeg",
+    "description": "A rustic retreat near geysers and wildlife.",
+    "price": "140",
+    "duration": "3",
+    "location": "Wyoming, USA",
+    "category": "National Parks"
+  },
+  {
+    "id": "6",
+    "name": "Niagara Falls Retreat",
+    "image": "https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg",
+    "description": "Stay close to the thundering beauty of the falls.",
+    "price": "180",
+    "duration": "2",
+    "location": "Ontario, Canada",
+    "category": "Waterfalls"
+  },
+  {
+    "id": "7",
+    "name": "Santorini Cliff Villa",
+    "image": "https://images.pexels.com/photos/161815/santorini-oia-greece-architecture-161815.jpeg",
+    "description": "A luxurious villa perched above the Aegean Sea.",
+    "price": "220",
+    "duration": "4",
+    "location": "Santorini, Greece",
+    "category": "Islands"
+  },
+  {
+    "id": "8",
+    "name": "Malibu Coastal Escape",
+    "image": "https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg",
+    "description": "A beachside haven with sun, surf, and relaxation.",
+    "price": "170",
+    "duration": "3",
+    "location": "California, USA",
+    "category": "Beaches"
+  },
+  {
+    "id": "9",
+    "name": "Alpine Peak Chalet",
+    "image": "https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg",
+    "description": "Warm up by the fire after a day on the slopes.",
+    "price": "150",
+    "duration": "4",
+    "location": "Alps, Switzerland",
+    "category": "Mountain"
+  },
+  {
+    "id": "10",
+    "name": "Tokyo Tower Suites",
+    "image": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+    "description": "Modern elegance in the heart of a neon-lit city.",
+    "price": "230",
+    "duration": "2",
+    "location": "Tokyo, Japan",
+    "category": "Cities"
+  },
+  {
+    "id": "11",
+    "name": "Banff Lake Lodge",
+    "image": "https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg",
+    "description": "A serene escape by turquoise waters and towering peaks.",
+    "price": "160",
+    "duration": "3",
+    "location": "Alberta, Canada",
+    "category": "National Parks"
+  },
+  {
+    "id": "12",
+    "name": "Iguazu Jungle Retreat",
+    "image": "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg",
+    "description": "Immerse yourself in nature near cascading waterfalls.",
+    "price": "190",
+    "duration": "3",
+    "location": "Misiones, Argentina",
+    "category": "Waterfalls"
+  }
+]

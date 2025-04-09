@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "Tropical Paradise Resort",
+    "image": "https://images.pexels.com/photos/261395/pexels-photo-261395.jpeg",
+    "rating": 4.8,
+    "reviews": 1234
+  },
+  {
+    "id": "2",
+    "name": "Ocean Breeze Bungalows",
+    "image": "https://images.pexels.com/photos/1007099/pexels-photo-1007099.jpeg",
+    "rating": 4.7,
+    "reviews": 987
+  },
+  {
+    "id": "3",
+    "name": "Everest Trek Lodge",
+    "image": "https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg",
+    "rating": 4.6,
+    "reviews": 654
+  },
+  {
+    "id": "4",
+    "name": "Skyline Penthouse",
+    "image": "https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg",
+    "rating": 4.9,
+    "reviews": 1789
+  },
+  {
+    "id": "5",
+    "name": "Yellowstone Cabin",
+    "image": "https://images.pexels.com/photos/803975/pexels-photo-803975.jpeg",
+    "rating": 4.5,
+    "reviews": 832
+  },
+  {
+    "id": "6",
+    "name": "Niagara Falls Retreat",
+    "image": "https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg",
+    "rating": 4.7,
+    "reviews": 1450
+  },
+  {
+    "id": "7",
+    "name": "Santorini Cliff Villa",
+    "image": "https://images.pexels.com/photos/161815/santorini-oia-greece-architecture-161815.jpeg",
+    "rating": 4.9,
+    "reviews": 1987
+  },
+  {
+    "id": "8",
+    "name": "Malibu Coastal Escape",
+    "image": "https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg",
+    "rating": 4.6,
+    "reviews": 1123
+  },
+  {
+    "id": "9",
+    "name": "Alpine Peak Chalet",
+    "image": "https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg",
+    "rating": 4.8,
+    "reviews": 765
+  },
+  {
+    "id": "10",
+    "name": "Tokyo Tower Suites",
+    "image": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+    "rating": 4.7,
+    "reviews": 1543
+  },
+  {
+    "id": "11",
+    "name": "Banff Lake Lodge",
+    "image": "https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg",
+    "rating": 4.8,
+    "reviews": 1321
+  },
+  {
+    "id": "12",
+    "name": "Iguazu Jungle Retreat",
+    "image": "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg",
+    "rating": 4.6,
+    "reviews": 998
+  }
+]

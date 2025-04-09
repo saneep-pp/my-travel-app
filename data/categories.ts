@@ -20,21 +20,10 @@ const destinationCategories = [
     title: "Waterfalls",
     iconName: "waterfall",
   },
-  {
-    title: "Lakes",
-    iconName: "lake",
-  },
-  {
-    title: "Rivers",
-    iconName: "river",
-  },
+
   {
     title: "Islands",
     iconName: "island",
-  },
-  {
-    title: "Deserts",
-    iconName: "desert",
   },
 ];
 export default destinationCategories;

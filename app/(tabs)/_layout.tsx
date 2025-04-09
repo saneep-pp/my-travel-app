@@ -1,10 +1,19 @@
-import { View } from "react-native";
-import React from "react";
+import { Stack } from "expo-router";
 import { Tabs } from "expo-router";
 import { FontAwesome, Ionicons, MaterialIcons } from "@expo/vector-icons";
 import Colors from "@/constants/Colors";
+import { View } from "react-native";
 
-const Layout = () => {
+export default function RootLayout() {
+  return (
+    <Stack>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="listing/[id]" options={{ title: "Listing Details" }} />
+    </Stack>
+  );
+}
+
+const TabLayout = () => {
   return (
     <Tabs
       screenOptions={{
@@ -21,64 +30,58 @@ const Layout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          tabBarIcon: ({ color }) => {
-            return <Ionicons name="compass" size={28} color={color} />;
-          },
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="compass" size={28} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="category"
         options={{
-          tabBarIcon: ({color}) => {
-            return (
-              <MaterialIcons name="space-dashboard" size={28} color={color} />
-            );
-          },
+          tabBarIcon: ({ color }) => (
+            <MaterialIcons name="space-dashboard" size={28} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="search"
         options={{
-          tabBarIcon: ({ color }) => {
-            return (
-              <View
-                style={{
-                  backgroundColor: Colors.primaryColor,
-                  paddingHorizontal: 12,
-                  paddingVertical: 12,
-                  borderRadius: 10,
-                  height: 50,
-                  width: 50,
-                }}
-              >
-                <Ionicons
-                  name="search-outline"
-                  size={28}
-                  color={Colors.white}
-                />
-              </View>
-            );
-          },
+          tabBarIcon: ({ color }) => (
+            <View
+              style={{
+                backgroundColor: Colors.primaryColor,
+                paddingHorizontal: 12,
+                paddingVertical: 12,
+                borderRadius: 10,
+                height: 50,
+                width: 50,
+              }}
+            >
+              <Ionicons name="search-outline" size={28} color={Colors.white} />
+            </View>
+          ),
         }}
       />
       <Tabs.Screen
         name="bookmarks"
         options={{
-          tabBarIcon: ({ color }) => {
-            return <Ionicons name="bookmark" size={28} color={color} />;
-          },
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="bookmark" size={28} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
-          tabBarIcon: ({ color }) => {
-            return <FontAwesome name="user" size={28} color={color} />;
-          },
+          tabBarIcon: ({ color }) => (
+            <FontAwesome name="user" size={28} color={color} />
+          ),
         }}
       />
     </Tabs>
   );
 };
 
-export default Layout;
+export const unstable_settings = {
+  initialRouteName: "(tabs)",
+};
